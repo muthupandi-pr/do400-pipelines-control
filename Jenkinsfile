@@ -12,7 +12,8 @@ pipeline {
         }
         stage('Frontend Tests') {
             steps {
-                sh 'node ./frontend/test.js'
+                echo "Frontend Tests"
+		sh 'node ./frontend/test.js'
             }
         }
     }
